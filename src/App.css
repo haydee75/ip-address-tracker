@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+a,
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+.LoadingContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: transparent;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LoadingContainer .lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.LoadingContainer .lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #000;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #000 transparent transparent transparent;
+}
+.LoadingContainer .lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.LoadingContainer .lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.LoadingContainer .lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.IpAddressContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.IpAddressContainer .Form {
+  height: 280px;
+  background: url("./images/pattern-bg.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.IpAddressContainer .Form h1 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 30px;
+  letter-spacing: -0.285714px;
+  color: #fff;
+  margin: 33px 0 31px 0;
+}
+.IpAddressContainer .Form .input-form {
+  display: flex;
+  max-width: 555px;
+  width: 100%;
+  height: 58px;
+  padding: 0 24px;
+}
+.IpAddressContainer .Form .input-form label {
+  width: 100%;
+}
+.IpAddressContainer .Form .input-form label input {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 24px;
+  border: 0;
+  border-radius: 15px 0 0 15px;
+}
+.IpAddressContainer .Form .input-form span.primary {
+  width: 58px;
+}
+.IpAddressContainer .Form .input-form span.primary input {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background: #000 url("./images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0 15px 15px 0;
+  padding: 0;
+  border: 0;
+}
+.IpAddressContainer .Box {
+  width: 100%;
+  height: 161px;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  top: 200px;
+  padding: 0 24px;
+}
+.IpAddressContainer .Box .Row {
+  display: flex;
+  background: #fff;
+  height: 100%;
+  width: 1100px;
+  box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.0983665);
+  border-radius: 15px;
+  padding: 37px 0;
+}
+@media only screen and (max-width: 1000px) {
+  .IpAddressContainer .Box .Row {
+    height: 294px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: space-between;
+  }
+}
+.IpAddressContainer .Box .Row .One-Col {
+  margin: auto;
+}
+.IpAddressContainer .Box .Row .Col {
+  max-width: 213px;
+  width: 100%;
+  margin-left: 32px;
+}
+.IpAddressContainer .Box .Row .Col:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+@media only screen and (max-width: 1000px) {
+  .IpAddressContainer .Box .Row .Col:not(:last-child) {
+    border: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .IpAddressContainer .Box .Row .Col {
+    max-width: 100%;
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.IpAddressContainer .Box .Row .Col h2 {
+  margin-bottom: 13px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+@media only screen and (max-width: 1000px) {
+  .IpAddressContainer .Box .Row .Col h2 {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 5px;
+  }
+}
+.IpAddressContainer .Box .Row .Col span {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: -0.232143px;
+  color: #2c2c2c;
+  display: block;
+  width: 200px;
+}
+@media only screen and (max-width: 1000px) {
+  .IpAddressContainer .Box .Row .Col span {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.IpAddressContainer .leaflet-container {
+  height: 520px;
+}
+.IpAddressContainer .leaflet-container .leaflet-control-zoom {
+  display: none;
+}

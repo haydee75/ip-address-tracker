@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./App.scss";
+import "./App.css";
 import IpAddressContainer from "./components/IpAddressContainer";
 
 const App = (props) => {
